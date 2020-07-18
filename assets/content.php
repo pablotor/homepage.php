@@ -1,9 +1,3 @@
-<?php
-include ""
-
-
-?>
-
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -64,7 +58,7 @@ include ""
                         Ciudad de Mendoza · Mendoza · Arg · +54 911 2455-8306 ·
                         <a href="mailto:contact@pablotorrubiano.com">contact@pablotorrubiano.com</a>
                     </div>
-                    <p class="lead mb-5"><?=$text[$lang]["about"]?></p>
+                    <p class="lead mb-5"><?= $text[$lang]["about"] ?></p>
                     <div class="social-icons">
                         <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/pablo-javier-torrubiano-7907b395/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" target="_blank" href="https://wa.me/5491124558306"><i class="fab fa-whatsapp"></i></a>
