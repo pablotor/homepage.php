@@ -4,21 +4,21 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Homepage - Pablo J Torrubiano</title>
-        <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="./css/styles.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Pablo J Torrubiano</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./assets/img/profile.jpg" alt="" /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../assets/img/profile.jpg" alt="" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -144,45 +144,45 @@
                     </div>
                     <div class="row">
                       <div class="col-md-6 p-3 p-md-5 p-sm-5">
-                        <img src="./assets/logos/00_Cognizant_g.svg" class="img-fluid mx-auto d-block big-company" alt="Cognizant">
+                        <img src="../assets/logos/00_Cognizant_g.svg" class="img-fluid mx-auto d-block big-company" alt="Cognizant">
                       </div>
                       <div class="col-md-6 p-3 p-md-5 p-sm-5 mb-3">
-                        <img src="./assets/logos/01_FirstData_g.svg" class="img-fluid mx-auto d-block big-company" alt="First Data">
+                        <img src="../assets/logos/01_FirstData_g.svg" class="img-fluid mx-auto d-block big-company" alt="First Data">
                       </div>
                     </div>
 
                   <div class="row justify-content-center">
                     <div class="col-sm-6 col-md-2 mw50 p-md-3 p-3 my-auto">
-                      <img src="./assets/logos/02_Bancolombia_g.svg" class="img-fluid mx-auto d-block small-company" alt="Bancolombia">
+                      <img src="../assets/logos/02_Bancolombia_g.svg" class="img-fluid mx-auto d-block small-company" alt="Bancolombia">
                     </div>
                     <div class="col-sm-6 col-md-2 mw50 p-md-3 p-3 my-auto">
-                      <img src="./assets/logos/06_BancoDeOccidente_g.svg" class="img-fluid mx-auto d-block small-company" alt="Banco de Occidente">
+                      <img src="../assets/logos/06_BancoDeOccidente_g.svg" class="img-fluid mx-auto d-block small-company" alt="Banco de Occidente">
                     </div>
                     <div class="col-sm-6 col-md-2 mw50 p-md-3 p-3 my-auto">
-                      <img src="./assets/logos/04_GrupoExito_g.svg" class="img-fluid mx-auto d-block small-company" alt="Grupo Éxito">
+                      <img src="../assets/logos/04_GrupoExito_g.svg" class="img-fluid mx-auto d-block small-company" alt="Grupo Éxito">
                     </div>
                     <div class="col-sm-6 col-md-2 mw50 p-md-3 p-3 my-auto">
-                      <img src="./assets/logos/03_BancoDeBogota_g.svg" class="img-fluid mx-auto d-block small-company" alt="Banco De Bogotá">
+                      <img src="../assets/logos/03_BancoDeBogota_g.svg" class="img-fluid mx-auto d-block small-company" alt="Banco De Bogotá">
                     </div>
                     <div class="col-sm-6 col-md-2 mw50 p-md-3 p-3 my-auto">
-                      <img src="./assets/logos/05_BancoPopular_g.svg" class="img-fluid mx-auto d-block small-company" alt="Banco Popular">
+                      <img src="../assets/logos/05_BancoPopular_g.svg" class="img-fluid mx-auto d-block small-company" alt="Banco Popular">
                     </div>
                   </div>
                   <div class="row justify-content-center">
                     <div class="col-sm-6 col-md-2 mw50 p-md-3 p-4 my-auto">
-                      <img src="./assets/logos/07_Mastercard_g.svg" class="img-fluid mx-auto d-block small-company" alt="MasterCard">
+                      <img src="../assets/logos/07_Mastercard_g.svg" class="img-fluid mx-auto d-block small-company" alt="MasterCard">
                     </div>
                     <div class="col-sm-6 col-md-2 mw50 p-md-3 p-3 my-auto">
-                      <img src="./assets/logos/08_Visa_g.svg" class="img-fluid mx-auto d-block small-company" alt="Visa">
+                      <img src="../assets/logos/08_Visa_g.svg" class="img-fluid mx-auto d-block small-company" alt="Visa">
                     </div>
                     <div class="col-sm-6 col-md-2 mw50 p-md-3 p-4 my-auto">
-                      <img src="./assets/logos/09_AmericanExpress_g.svg" class="img-fluid mx-auto d-block small-company p-md-3" alt="American Express">
+                      <img src="../assets/logos/09_AmericanExpress_g.svg" class="img-fluid mx-auto d-block small-company p-md-3" alt="American Express">
                     </div>
                     <div class="col-sm-6 col-md-2 mw50 p-md-3 p-3 my-auto">
-                      <img src="./assets/logos/10_Credibanco_g.svg" class="img-fluid mx-auto d-block small-company" alt="Credibanco">
+                      <img src="../assets/logos/10_Credibanco_g.svg" class="img-fluid mx-auto d-block small-company" alt="Credibanco">
                     </div>
                     <div class="col-sm-6 col-md-2 mw50 p-md-3 p-3 my-auto">
-                      <img src="./assets/logos/11_Redeban_g.svg" class="img-fluid mx-auto d-block small-company" alt="Redeban">
+                      <img src="../assets/logos/11_Redeban_g.svg" class="img-fluid mx-auto d-block small-company" alt="Redeban">
                     </div>
                   </div>
                   <div class="row align-text-bottom mt-5">
@@ -241,7 +241,7 @@
                                 <div class="portfolio-item-caption d-flex align-items-end justify-content-end h-100 w-100">
                                     <div class="portfolio-item-caption-content mb-3 mr-3"><h2 class="text-white">Gallery</h2></div>
                                 </div>
-                                <img class="img-fluid" src="./assets/img/portfolio/gallery.jpg" alt="" />
+                                <img class="img-fluid" src="../assets/img/portfolio/gallery.jpg" alt="" />
                             </div>
                         </div>
                         <!-- Portfolio Item 2-->
@@ -250,7 +250,7 @@
                                 <div class="portfolio-item-caption d-flex align-items-end justify-content-end h-100 w-100">
                                     <div class="portfolio-item-caption-content mb-3 mr-3"><h2 class="text-white">Blog</h2></div>
                                 </div>
-                                <img class="img-fluid" src="./assets/img/portfolio/blog.jpg" alt="" />
+                                <img class="img-fluid" src="../assets/img/portfolio/blog.jpg" alt="" />
                             </div>
                         </div>
                         <!-- Portfolio Item 3-->
@@ -259,7 +259,7 @@
                                 <div class="portfolio-item-caption d-flex align-items-end justify-content-end h-100 w-100">
                                     <div class="portfolio-item-caption-content mb-3 mr-3"><h2 class="text-white">Delivery</h2></div>
                                 </div>
-                                <img class="img-fluid" src="./assets/img/portfolio/delivery.jpg" alt="" />
+                                <img class="img-fluid" src="../assets/img/portfolio/delivery.jpg" alt="" />
                             </div>
                         </div>
                         <!-- Portfolio Item 4-->
@@ -268,7 +268,7 @@
                                 <div class="portfolio-item-caption d-flex align-items-end justify-content-end h-100 w-100">
                                     <div class="portfolio-item-caption-content mb-3 mr-3"><h2 class="text-white">Toolbox</h2></div>
                                 </div>
-                                <img class="img-fluid" src="./assets/img/portfolio/toolbox.jpg" alt="" />
+                                <img class="img-fluid" src="../assets/img/portfolio/toolbox.jpg" alt="" />
                             </div>
                         </div>
                     </div>
@@ -307,7 +307,7 @@
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5 mt-5" id="portfolioModal1Label">Gallery</h2>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="./assets/img/portfolio/gallery.jpg" alt="" />
+                                    <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/gallery.jpg" alt="" />
                                     <!-- Portfolio Modal - Text-->
                                     <p>A webpage to showcase your artwork.</p>
                                     <p class="mb-5 text-uppercase">Coming soon!</p>
@@ -336,7 +336,7 @@
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5 mt-5" id="portfolioModal2Label">Blog</h2>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="./assets/img/portfolio/blog.jpg" alt="" />
+                                    <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/blog.jpg" alt="" />
                                     <!-- Portfolio Modal - Text-->
                                     <p>A simple and good looking webpage to share your voice.</p>
                                     <p class="mb-5 text-uppercase">Coming soon!</p>
@@ -365,7 +365,7 @@
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5 mt-5" id="portfolioModal3Label">Delivery</h2>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="./assets/img/portfolio/delivery.jpg" alt="" />
+                                    <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/delivery.jpg" alt="" />
                                     <!-- Portfolio Modal - Text-->
                                     <p>A modern web for a modern restaurant. Share your menu and get the delivery orders!</p>
                                     <p class="mb-5 text-uppercase">Coming soon!</p>
@@ -394,7 +394,7 @@
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5 mt-5" id="portfolioModal4Label">Toolbox</h2>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="./assets/img/portfolio/toolbox.jpg" alt="" />
+                                    <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/toolbox.jpg" alt="" />
                                     <!-- Portfolio Modal - Text-->
                                     <p>The swiss knife made a webpage.</p>
                                     <p class="mb-5 text-uppercase">Coming soon!</p>
