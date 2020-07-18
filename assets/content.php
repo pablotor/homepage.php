@@ -1,3 +1,9 @@
+<?php
+include ""
+
+
+?>
+
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -23,13 +29,13 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience-i">Experience I</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience-ii">Experience II</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li hidden class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><?=$text[$lang]["index"]["about"]?></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience-i"><?=$text[$lang]["index"]["experience-i"]?></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience-ii"><?=$text[$lang]["index"]["experience-ii"]?></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><?=$text[$lang]["index"]["education"]?></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio"><?=$text[$lang]["index"]["portfolio"]?></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests"><?=$text[$lang]["index"]["interests"]?></a></li>
+                    <li hidden class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards"><?=$text[$lang]["index"]["awards"]?></a></li>
                 </ul>
             </div>
         </nav>
@@ -42,7 +48,7 @@
                     <!-- Language Selector-->
                     <div class="dropdown text-right">
                       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?=$lang?>
+                        <?=ucfirst($lang)?>
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#page-top">English</a>
@@ -58,11 +64,7 @@
                         Ciudad de Mendoza · Mendoza · Arg · +54 911 2455-8306 ·
                         <a href="mailto:contact@pablotorrubiano.com">contact@pablotorrubiano.com</a>
                     </div>
-                    <p class="lead mb-5">Hi! I'm a 30 years old developer specialized in payments, particularly in the Base24 Classic platform. My expertise includes a wide knowledge over banking and finances, debit and credit cards, testing and certifications of banking products, and cryptography.<br>
-                    <br>
-                    I have 5 years of experience delivering quality projects and dedicated production support to the biggest banks in Colombia, and certifying the Base24/VisionPlus ecosystem for many MasterCard and Visa products.<br>
-                    <br>
-                    Lately I'm broadening my horizons to Web Development, focusing on JS, React and Python.</p>
+                    <p class="lead mb-5"><?=$text[$lang]["about"]?></p>
                     <div class="social-icons">
                         <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/pablo-javier-torrubiano-7907b395/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" target="_blank" href="https://wa.me/5491124558306"><i class="fab fa-whatsapp"></i></a>
@@ -74,7 +76,7 @@
             <!-- Experience-I-->
             <section class="resume-section" id="experience-i">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience I</h2>
+                    <h2 class="mb-5"><?=$text[$lang]["index"]["experience-i"]?></h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Sr Associate · Base24 Analyst </h3>
@@ -138,9 +140,9 @@
             <!-- Experience-II-->
             <section class="resume-section" id="experience-ii">
                 <div class="resume-section-content">
-                    <h2 class="mb-3">Experience II</h2>
+                    <h2 class="mb-3"><?=$text[$lang]["index"]["expericence-ii"]?></h2>
                     <div class="subheading mb-3">
-                        Some of the companies I've work with:
+                        <?=$text[$lang]["experience-ii"]["subheading"]?>
                     </div>
                     <div class="row">
                       <div class="col-md-6 p-3 p-md-5 p-sm-5">
@@ -186,7 +188,7 @@
                     </div>
                   </div>
                   <div class="row align-text-bottom mt-5">
-                  All product names, logos, and brands are property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names, logos, and brands does not imply endorsement. Graphic design is my passion.
+                  <?=$text[$lang]["experience-ii"]["disclaimer"]?>
                   </div>
                 </div>
             </section>
@@ -194,7 +196,7 @@
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
+                    <h2 class="mb-5"><?=$text[$lang]["index"]["education"]?></h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Facultad de Ingeniería · Universidad de Buenos Aires</h3>
@@ -231,8 +233,8 @@
             <!-- Portfolio-->
             <section class="resume-section portfolio" id="portfolio">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Portfolio</h2>
-                    <div class="subheading mb-3">Check out my latest Web Development projects:</div>
+                    <h2 class="mb-5"><?=$text[$lang]["index"]["portfolio"]?></h2>
+                    <div class="subheading mb-3"><?=$text[$lang]["portfolio"]["subheading"]?></div>
                     <!-- Portfolio Grid Items-->
                     <div class="row">
                         <!-- Portfolio Item 1-->
@@ -279,16 +281,16 @@
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p class="lead mb-5">In contrast to my profession, my hobbies are analog. Eight years ago I started dancing Tango which inspired me to create, together with a group of friends, <em>La Milonga del Bichito</em>, a Tango Club that took place from 2014 to 2016. Thought as a place where we could share our love for tango in an alternative and friendly way, we hosted a weekly event which included dance lessons, live music, social dancing and tons of tango for everyone’s enjoyment.</p>
-                    <p class="lead mb-0">From November 2018 until the Covid19 lockdown got us in March 2020, my partner and I traveled through Argentina, Chile, Uruguay, Brazil and Paraguay covering more than 45 thousand kilometers by car. This adventure along the South American routes originated the project <em>between-shores</em>, a blog that we’ll be launching soon, covering histories and information about the amazing places we’ve visited.</p>
+                    <h2 class="mb-5"><?=$text[$lang]["index"]["interests"]?></h2>
+                    <p class="lead mb-5"><?=$text[$lang]["interests"]["paragraphs"][0]?></p>
+                    <p class="lead mb-0"><?=$text[$lang]["interests"]["paragraphs"][1]?></p>
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Awards-->
             <section hidden class="resume-section" id="awards">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <h2 class="mb-5"><?=$text[$lang]["index"]["awards"][0]?></h2>
                 </div>
             </section>
         </div>
