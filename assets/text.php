@@ -105,7 +105,7 @@ $text = [
     "portfolio" => [
       "subheading" => "Check out my latest Web Development projects:",
       "close" => "Close Window",
-      "comingsoon" => "Coming soon!"
+      "comingsoon" => "Coming soon!",
       "list" => [
         "gallery" => "A webpage to showcase your artwork.",
         "blog" => "A simple and good looking webpage to share your voice.",
@@ -122,7 +122,7 @@ $text = [
       ]
     ]
   ], # end of english language
-  
+
   "es" => [
     "index" => [
       "about" => "Acerca de",
@@ -227,7 +227,7 @@ $text = [
     "portfolio" => [
       "subheading" => "Echa un vistazo a mis últimos proyectos de desarrollo web:",
       "close" => "Cerrar Ventana",
-      "comingsoon" => "Muy pronto!"
+      "comingsoon" => "Muy pronto!",
       "list" => [
         "gallery" => "Una página web para exponer tu trabajo artístico.",
         "blog" => "Una página simple y elegante para compartir tus ideas.",

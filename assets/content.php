@@ -3,9 +3,9 @@ function linkAssign($curLang, $button){
   if ($curLang === $button){
     return "#page-top";
   } elseif ($button === "es"){
-    return "https://pablotorrubiano.xyz/es/"
+    return "https://pablotorrubiano.xyz/es/";
   } elseif ($button === "en"){
-    return "https://pablotorrubiano.xyz/en/"
+    return "https://pablotorrubiano.xyz/en/";
   }
 }
 ?>
