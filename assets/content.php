@@ -1,3 +1,16 @@
+<?php
+function linkAssign($curLang, $button){
+  if ($curLang === $button){
+    return "#page-top";
+  } elseif ($button === "es"){
+    return "https://pablotorrubiano.xyz/es/"
+  } elseif ($button === "en"){
+    return "https://pablotorrubiano.xyz/en/"
+  }
+}
+?>
+
+
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -45,8 +58,8 @@
                         <?=ucfirst($lang)?>
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#page-top">English</a>
-                        <a class="dropdown-item" href="https://pablotorrubiano.xyz/es/">Español</a>
+                        <a class="dropdown-item" href=<?=linkAssign($lang,"en")?>>English</a>
+                        <a class="dropdown-item" href=<?=linkAssign($lang,"es")?>>Español</a>
                       </div>
                     </div>
 
@@ -56,9 +69,10 @@
                     </h1>
                     <div class="subheading mb-5">
                         Ciudad de Mendoza · Mendoza · Arg · +54 911 2455-8306 ·
-                        <a href="mailto:contact@pablotorrubiano.com">contact@pablotorrubiano.com</a>
+                        <a href=<?="mailto:" . $text[$lang]["contact"]["mail"]?>>
+                          <?=$text[$lang]["contact"]["mail"]?></a>
                     </div>
-                    <p class="lead mb-5"><?= $text[$lang]["about"] ?></p>
+                    <p class="lead mb-5"><?=$text[$lang]["about"]?></p>
                     <div class="social-icons">
                         <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/pablo-javier-torrubiano-7907b395/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" target="_blank" href="https://wa.me/5491124558306"><i class="fab fa-whatsapp"></i></a>
@@ -73,60 +87,60 @@
                     <h2 class="mb-5"><?=$text[$lang]["index"]["experience-i"]?></h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Sr Associate · Base24 Analyst </h3>
-                            <div class="subheading mb-3">Cognizant · First Data</div>
-                            <p>Qualifications & Responsibilities
+                            <h3 class="mb-0"><?=$text[$lang]["experience-i"]["joblist"][2]["title"]?></h3>
+                            <div class="subheading mb-3"><?=$text[$lang]["experience-i"]["joblist"][2]["place"]?></div>
+                            <p><?=$text[$lang]["experience-i"]["qual"]?>
                               <ul>
-                                <li>Cognizant consultant for the First Data Base24 Regional team.</li>
-                                <li>Platform leader for strategic projects including portfolio migration, new products and certifications.</li>
-                                <li>Client Contact Point for Colombian region.</li>
-                                <li>Responsible for test and production support for five financial institutions.</li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["qual"][0]?></li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["qual"][1]?></li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["qual"][3]?></li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["qual"][4]?></li>
                               </ul>
                             </p>
-                            <p>Achievements
+                            <p><?=$text[$lang]["experience-i"]["achi"]?>
                               <ul>
-                                <li>Over 300% platform growth in less than four years.</li>
-                                <li>Led two strategic projects, a new product for the biggest bank in the region and a portfolio migration of a new client with 2M cardholders. Both with great success.</li>
-                                <li>Multiple certifications achieved for the Base24/VisionPlus platform including Visa & MasterCard Contactless for Colombian region.</li>
-                                <li>Two promotions and an award for Employee of the Quarter in 2017.</li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["achi"][0]?></li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["achi"][1]?></li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["achi"][2]?></li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["achi"][3]?></li>
                               </ul>
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2014 - November 2018</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><?=$text[$lang]["experience-i"]["joblist"][2]["date"]?></span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">IT Analyst</h3>
-                            <div class="subheading mb-3">Conexia</div>
-                            <p>Qualifications & Responsibilities
+                            <h3 class="mb-0"><li><?=$text[$lang]["experience-i"]["joblist"][1]["title"]?></li></h3>
+                            <div class="subheading mb-3"><li><?=$text[$lang]["experience-i"]["joblist"][1]["place"]?></li></div>
+                            <p><?=$text[$lang]["experience-i"]["qual"]?>
                               <ul>
-                                <li>IT support Level I and II.</li>
-                                <li>VM, telephone exchange and networking management.</li>
-                                <li>Access and Active Directory admin.</li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][1]["qual"][0]?></li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][1]["qual"][1]?></li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][1]["qual"][3]?></li>
                               </ul>
                             </p>
-                            <p>Achievements
+                            <p><?=$text[$lang]["experience-i"]["achi"]?>
                               <ul>
-                                <li>Restored a corrupt production disk that was not backed-up.</li>
-                                <li>Automatized desktop system installation improving efficiency by 75%.</li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][1]["achi"][0]?></li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][1]["achi"][1]?></li>
                               </ul>
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2012 - December 2013</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><li><?=$text[$lang]["experience-i"]["joblist"][1]["date"]?></span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Entrepreneur</h3>
-                            <div class="subheading mb-3">Abandon PC Store · E-commerce</div>
-                            <p>After realizing there was an uncovered demand for high performance PCs in some particular socio-demographic segments, I designed this brand as a way to capitalize my hardware expertise. It was specialized in providing in-depth and personalized technical advise, as a way to stand out from other sellers. It allowed me to improve different competences:
+                            <h3 class="mb-0"><?=$text[$lang]["experience-i"]["joblist"][0]["title"]?></h3>
+                            <div class="subheading mb-3"><?=$text[$lang]["experience-i"]["joblist"][0]["place"]?></div>
+                            <p><?=$text[$lang]["experience-i"]["joblist"][0]["description"]?>
                               <ul>
-                                <li>Brand design and marketing.</li>
-                                <li> Provider management and delivery logistics.</li>
-                                <li> Social skills, focusing on transmitting technical knowledge and generating the trust of clients.</li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][0]["list"][0]?></li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][0]["list"][1]?></li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][0]["list"][2]?></li>
                               </ul>
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 2010 - May 2012</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><li><?=$text[$lang]["experience-i"]["joblist"][0]["date"]?></li></span></div>
                     </div>
                 </div>
             </section>
@@ -193,33 +207,33 @@
                     <h2 class="mb-5"><?=$text[$lang]["index"]["education"]?></h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Facultad de Ingeniería · Universidad de Buenos Aires</h3>
-                            <div class="subheading">Informatic Engineering</div>
-                            <p class="mb-3">Incomplete</p>
+                            <h3 class="mb-0"><?=$text[$lang]["education"]["list"][3]["inst"]?></h3>
+                            <div class="subheading"><?=$text[$lang]["education"]["list"][3]["title"]?></div>
+                            <p class="mb-3"><?=$text[$lang]["education"]["list"][3]["subtitle"]?></p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2009 - 2016</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><?=$text[$lang]["education"]["list"][3]["date"]?></span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Ciclo Básico Común · Universidad de Buenos Aires</h3>
-                            <div class="subheading mb-3">Engineering Entry Year</div>
+                            <h3 class="mb-0"><?=$text[$lang]["education"]["list"][2]["inst"]?></h3>
+                            <div class="subheading mb-3"><?=$text[$lang]["education"]["list"][2]["title"]?></div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2008</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><?=$text[$lang]["education"]["list"][2]["date"]?></span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">EEM N°18 - ENSPA</h3>
-                            <div class="subheading mb-3">Baccalaureate in Exact & Natural Sciences</div>
+                            <h3 class="mb-0"><?=$text[$lang]["education"]["list"][1]["inst"]?></h3>
+                            <div class="subheading mb-3"><?=$text[$lang]["education"]["list"][1]["title"]?></div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2005 - 2007</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><?=$text[$lang]["education"]["list"][1]["date"]?></span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">FUCE Foundation</h3>
-                            <div class="subheading">Computer & Network Assembly, Maintenance and Repair</div>
-                            <p class="mb-3">Certified by the Universidad Tecnológica Nacional</p>
+                            <h3 class="mb-0"><?=$text[$lang]["education"]["list"][0]["inst"]?></h3>
+                            <div class="subheading"><?=$text[$lang]["education"]["list"][0]["title"]?></div>
+                            <p class="mb-3"><?=$text[$lang]["education"]["list"][0]["subtitle"]?></p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2006</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><?=$text[$lang]["education"]["list"][0]["date"]?></span></div>
                     </div>
                 </div>
             </section>
@@ -305,11 +319,11 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/gallery.jpg" alt="" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p>A webpage to showcase your artwork.</p>
-                                    <p class="mb-5 text-uppercase">Coming soon!</p>
+                                    <p><?=$text[$lang]["portfolio"]["list"]["gallery"]?></p>
+                                    <p class="mb-5 text-uppercase"><?=$text[$lang]["portfolio"]["comingsoon"]?></p>
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                        <?=$text[$lang]["portfolio"]["close"]?>
                                     </button>
                                 </div>
                             </div>
@@ -334,11 +348,11 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/blog.jpg" alt="" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p>A simple and good looking webpage to share your voice.</p>
-                                    <p class="mb-5 text-uppercase">Coming soon!</p>
+                                    <p><?=$text[$lang]["portfolio"]["list"]["blog"]?></p>
+                                    <p class="mb-5 text-uppercase"><?=$text[$lang]["portfolio"]["comingsoon"]?></p>
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                        <?=$text[$lang]["portfolio"]["close"]?>
                                     </button>
                                 </div>
                             </div>
@@ -363,11 +377,11 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/delivery.jpg" alt="" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p>A modern web for a modern restaurant. Share your menu and get the delivery orders!</p>
-                                    <p class="mb-5 text-uppercase">Coming soon!</p>
+                                    <p><?=$text[$lang]["portfolio"]["list"]["delivery"]?></p>
+                                    <p class="mb-5 text-uppercase"><?=$text[$lang]["portfolio"]["comingsoon"]?></p>
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                        <?=$text[$lang]["portfolio"]["close"]?>
                                     </button>
                                 </div>
                             </div>
@@ -392,11 +406,11 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/toolbox.jpg" alt="" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p>The swiss knife made a webpage.</p>
-                                    <p class="mb-5 text-uppercase">Coming soon!</p>
+                                    <p><?=$text[$lang]["portfolio"]["list"]["toolbox"]?></p>
+                                    <p class="mb-5 text-uppercase"><?=$text[$lang]["portfolio"]["comingsoon"]?></p>
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                        <?=$text[$lang]["portfolio"]["close"]?>
                                     </button>
                                 </div>
                             </div>
