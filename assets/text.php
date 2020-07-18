@@ -35,7 +35,7 @@ $text = [
           "Multiple certifications achieved for the Base24/VisionPlus platform including Visa & MasterCard Contactless for Colombian region.",
           "Two promotions and an award for Employee of the Quarter in 2017."
         ],
-        "time" = "June 2014 - November 2018"
+        "time" => "June 2014 - November 2018"
       ],
       [
         "title" => "IT Analyst",
@@ -49,7 +49,7 @@ $text = [
           "Restored a corrupt production disk that was not backed-up.",
           "Automatized desktop system installation improving efficiency by 75%."
         ],
-        "time" = "September 2012 - December 2013"
+        "time" => "September 2012 - December 2013"
       ],
       [
         "title" => "Entrepreneur",
@@ -60,7 +60,7 @@ $text = [
           "Provider management and delivery logistics.",
           "Social skills, focusing on transmitting technical knowledge and generating the trust of clients."
         ],
-        "time" = "February 2010 - May 2012"
+        "time" => "February 2010 - May 2012"
       ]
     ],
 
@@ -74,13 +74,13 @@ $text = [
       [
         "inst" => "FUCE Foundation",
         "title" => "Computer & Network Assembly, Maintenance and Repair",
-        "subtitle" = "Certified by the Universidad Tecnológica Nacional",
-        "time" = "2006"
+        "subtitle" => "Certified by the Universidad Tecnológica Nacional",
+        "time" => "2006"
       ],
       [
         "inst" => "EEM N°18 - ENSPA",
         "title" => "Baccalaureate in Exact & Natural Sciences",
-        "time" = "2005 - 2007"
+        "time" => "2005 - 2007"
       ],
       [
         "inst" => "Ciclo Básico Común · Universidad de Buenos Aires",
@@ -90,8 +90,8 @@ $text = [
       [
         "inst" => "Facultad de Ingeniería · Universidad de Buenos Aires",
         "title" => "Informatic Engineering",
-        "subtitle" = "Incomplete",
-        "time" = "2009 - 2016"
+        "subtitle" => "Incomplete",
+        "time" => "2009 - 2016"
       ],
     ],
 
