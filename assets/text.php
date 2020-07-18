@@ -85,7 +85,7 @@ $text = [
       [
         "inst" => "Ciclo Básico Común · Universidad de Buenos Aires",
         "title" => "Engineering Entry Year",
-        "time" = "2008"
+        "time" => "2008"
       ],
       [
         "inst" => "Facultad de Ingeniería · Universidad de Buenos Aires",
