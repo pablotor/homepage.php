@@ -42,7 +42,7 @@
                     <!-- Language Selector-->
                     <div class="dropdown text-right">
                       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        En
+                        <?=$lang?>
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#page-top">English</a>

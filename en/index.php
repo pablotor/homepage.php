@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<?php
+$lang = "en";
+?>
+
+<html lang=<?=$lang?>>
 
 <?php
 include "../index.php";
