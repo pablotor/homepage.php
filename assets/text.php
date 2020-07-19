@@ -166,7 +166,7 @@ $text = [
             "Manejo de proveedores y logística.",
             "Aptitudes sociales con foco en la transmisión de conocimiento técnico y generación de confianza."
           ],
-          "date" => "Febrero 2010 - Mayo 20122"
+          "date" => "Febrero 2010 - Mayo 2012"
         ],
         [
           "title" => "Analista de Infraestructura",
@@ -239,12 +239,19 @@ $text = [
       "close" => "Cerrar Ventana",
       "comingsoon" => "Muy pronto!",
       "list" => [
-        "gallery" => "Una página web para exponer tu trabajo artístico.",
-        "blog" => "Una página simple y elegante para compartir tus ideas.",
-        "delivery" => "Una página web moderna para un restaurante moderno. Comparte tu menú y toma los pedidos de delivery desde tu propio sitio!",
-        "toolbox" => "La navaja suiza echa página web."
+        "gallery" => [
+          "description" => "Una página web para exponer tu trabajo artístico.",
+          "image" => "../assets/img/portfolio/gallery.jpg"],
+        "blog" => [
+          "description" => "Una página simple y elegante para compartir tus ideas.",
+          "image" => "../assets/img/portfolio/blog.jpg"],
+        "delivery" => [
+          "description" => "Una página web moderna para un restaurante moderno. Comparte tu menú y toma los pedidos de delivery desde tu propio sitio!",
+          "image" => "../assets/img/portfolio/delivery.jpg"],
+        "toolbox" => [
+          "description" => "La navaja suiza echa página web.",
+          "image" => "../assets/img/portfolio/toolbox.jpg"]
       ]
-
     ],
 
     "interests" => [
