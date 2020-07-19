@@ -126,7 +126,7 @@ function linkAssign($curLang, $button){
                               </ul>
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><li><?=$text[$lang]["experience-i"]["joblist"][1]["date"]?></span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><?=$text[$lang]["experience-i"]["joblist"][1]["date"]?></span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">

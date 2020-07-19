@@ -77,29 +77,30 @@ $text = [
     ],
 
     "education" => [
-      "list" =>
-      [
-        "inst" => "FUCE Foundation",
-        "title" => "Computer & Network Assembly, Maintenance and Repair",
-        "subtitle" => "Certified by the Universidad Tecnológica Nacional",
-        "date" => "2006"
-      ],
-      [
-        "inst" => "EEM N°18 - ENSPA",
-        "title" => "Baccalaureate in Exact & Natural Sciences",
-        "date" => "2005 - 2007"
-      ],
-      [
-        "inst" => "Ciclo Básico Común · Universidad de Buenos Aires",
-        "title" => "Engineering Entry Year",
-        "date" => "2008"
-      ],
-      [
-        "inst" => "Facultad de Ingeniería · Universidad de Buenos Aires",
-        "title" => "Informatic Engineering",
-        "subtitle" => "Incomplete",
-        "date" => "2009 - 2016"
-      ], #end of list
+      "list" => [
+        [
+          "inst" => "FUCE Foundation",
+          "title" => "Computer & Network Assembly, Maintenance and Repair",
+          "subtitle" => "Certified by the Universidad Tecnológica Nacional",
+          "date" => "2006"
+        ],
+        [
+          "inst" => "EEM N°18 - ENSPA",
+          "title" => "Baccalaureate in Exact & Natural Sciences",
+          "date" => "2005 - 2007"
+        ],
+        [
+          "inst" => "Ciclo Básico Común · Universidad de Buenos Aires",
+          "title" => "Engineering Entry Year",
+          "date" => "2008"
+        ],
+        [
+          "inst" => "Facultad de Ingeniería · Universidad de Buenos Aires",
+          "title" => "Informatic Engineering",
+          "subtitle" => "Incomplete",
+          "date" => "2009 - 2016"
+        ]
+      ] #end of list
     ], #end of education
 
     "portfolio" => [
@@ -199,28 +200,29 @@ $text = [
     ],
 
     "education" => [
-      "list" =>
-      [
-        "inst" => "Fundación FUCE",
-        "title" => "Armado, Mantenimiento y Reparación de Computadoras y Redes",
-        "subtitle" => "Certificado por la Universidad Tecnológica Nacional",
-        "date" => "2006"
-      ],
-      [
-        "inst" => "EEM N°18 - ENSPA",
-        "title" => "Bachiller en Ciencias Exactas y Naturales",
-        "date" => "2005 - 2007"
-      ],
-      [
-        "inst" => "Ciclo Básico Común · Universidad de Buenos Aires",
-        "title" => "Ingreso para Ingeniería",
-        "date" => "2008"
-      ],
-      [
-        "inst" => "Facultad de Ingeniería · Universidad de Buenos Aires",
-        "title" => "Ingeniería en Informática",
-        "subtitle" => "Incompleto",
-        "date" => "2009 - 2016"
+      "list" => [
+        [
+          "inst" => "Fundación FUCE",
+          "title" => "Armado, Mantenimiento y Reparación de Computadoras y Redes",
+          "subtitle" => "Certificado por la Universidad Tecnológica Nacional",
+          "date" => "2006"
+        ],
+        [
+          "inst" => "EEM N°18 - ENSPA",
+          "title" => "Bachiller en Ciencias Exactas y Naturales",
+          "date" => "2005 - 2007"
+        ],
+        [
+          "inst" => "Ciclo Básico Común · Universidad de Buenos Aires",
+          "title" => "Ingreso para Ingeniería",
+          "date" => "2008"
+        ],
+        [
+          "inst" => "Facultad de Ingeniería · Universidad de Buenos Aires",
+          "title" => "Ingeniería en Informática",
+          "subtitle" => "Incompleto",
+          "date" => "2009 - 2016"
+        ]
       ] #end of list
     ], #end of education
 
