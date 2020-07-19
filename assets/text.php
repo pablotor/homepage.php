@@ -108,10 +108,18 @@ $text = [
       "close" => "Close Window",
       "comingsoon" => "Coming soon!",
       "list" => [
-        "gallery" => "A webpage to showcase your artwork.",
-        "blog" => "A simple and good looking webpage to share your voice.",
-        "delivery" => "A modern web for a modern restaurant. Share your menu and get the delivery orders!",
-        "toolbox" => "The swiss knife made a webpage."
+        "gallery" => [
+          "description" => "A webpage to showcase your artwork.",
+          "image" => "../assets/img/portfolio/delivery.jpg"],
+        "blog" => [
+          "description" => "A simple and good looking webpage to share your voice.",
+          "image" => "../assets/img/portfolio/blog.jpg"],
+        "delivery" => [
+          "description" => "A modern web for a modern restaurant. Share your menu and get the delivery orders!",
+          "image" => "../assets/img/portfolio/delivery.jpg"],
+        "toolbox" => [
+          "description" => "The swiss knife made a webpage.",
+          "image" => "../assets/img/portfolio/toolbox.jpg"]
       ]
 
     ],

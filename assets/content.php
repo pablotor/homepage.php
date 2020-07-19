@@ -91,18 +91,16 @@ function linkAssign($curLang, $button){
                             <div class="subheading mb-3"><?=$text[$lang]["experience-i"]["joblist"][2]["place"]?></div>
                             <p><?=$text[$lang]["experience-i"]["qual"]?>
                               <ul>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["qual"][0]?></li>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["qual"][1]?></li>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["qual"][2]?></li>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["qual"][3]?></li>
+                                <?php foreach ($text[$lang]["experience-i"]["joblist"][2]["qual"] as $item): ?>
+                                  <li><?=$item?></li>
+                                <?php endforeach; ?>
                               </ul>
                             </p>
                             <p><?=$text[$lang]["experience-i"]["achi"]?>
                               <ul>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["achi"][0]?></li>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["achi"][1]?></li>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["achi"][2]?></li>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["achi"][3]?></li>
+                                <?php foreach ($text[$lang]["experience-i"]["joblist"][2]["achi"] as $item): ?>
+                                  <li><?=$item?></li>
+                                <?php endforeach; ?>
                               </ul>
                             </p>
                         </div>
@@ -114,15 +112,16 @@ function linkAssign($curLang, $button){
                             <div class="subheading mb-3"><?=$text[$lang]["experience-i"]["joblist"][1]["place"]?></div>
                             <p><?=$text[$lang]["experience-i"]["qual"]?>
                               <ul>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][1]["qual"][0]?></li>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][1]["qual"][1]?></li>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][1]["qual"][2]?></li>
+                                <?php foreach ($text[$lang]["experience-i"]["joblist"][2]["qual"] as $item): ?>
+                                  <li><?=$item?></li>
+                                <?php endforeach; ?>
                               </ul>
                             </p>
                             <p><?=$text[$lang]["experience-i"]["achi"]?>
                               <ul>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][1]["achi"][0]?></li>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][1]["achi"][1]?></li>
+                                <?php foreach ($text[$lang]["experience-i"]["joblist"][2]["achi"] as $item): ?>
+                                  <li><?=$item?></li>
+                                <?php endforeach; ?>
                               </ul>
                             </p>
                         </div>
@@ -205,36 +204,19 @@ function linkAssign($curLang, $button){
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
                     <h2 class="mb-5"><?=$text[$lang]["index"]["education"]?></h2>
+                    <?php foreach ($text[$lang]["education"]["list"] as $edu):?>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0"><?=$text[$lang]["education"]["list"][3]["inst"]?></h3>
-                            <div class="subheading"><?=$text[$lang]["education"]["list"][3]["title"]?></div>
-                            <p class="mb-3"><?=$text[$lang]["education"]["list"][3]["subtitle"]?></p>
+                            <h3 class="mb-0"><?=$edu["inst"]?></h3>
+                            <div class="subheading"><?=$edu["title"]?></div>
+                            <?php if (edu["subtitle"]){
+                              echo '<p class="mb-3">${edu["subtitle"]}</p>';
+                            } ?>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><?=$text[$lang]["education"]["list"][3]["date"]?></span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><?=$edu["date"]?></span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0"><?=$text[$lang]["education"]["list"][2]["inst"]?></h3>
-                            <div class="subheading mb-3"><?=$text[$lang]["education"]["list"][2]["title"]?></div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><?=$text[$lang]["education"]["list"][2]["date"]?></span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0"><?=$text[$lang]["education"]["list"][1]["inst"]?></h3>
-                            <div class="subheading mb-3"><?=$text[$lang]["education"]["list"][1]["title"]?></div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><?=$text[$lang]["education"]["list"][1]["date"]?></span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0"><?=$text[$lang]["education"]["list"][0]["inst"]?></h3>
-                            <div class="subheading"><?=$text[$lang]["education"]["list"][0]["title"]?></div>
-                            <p class="mb-3"><?=$text[$lang]["education"]["list"][0]["subtitle"]?></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><?=$text[$lang]["education"]["list"][0]["date"]?></span></div>
-                    </div>
+                    <?php endforeach;?>
+
                 </div>
             </section>
             <hr class="m-0" />
@@ -245,44 +227,21 @@ function linkAssign($curLang, $button){
                     <div class="subheading mb-3"><?=$text[$lang]["portfolio"]["subheading"]?></div>
                     <!-- Portfolio Grid Items-->
                     <div class="row">
-                        <!-- Portfolio Item 1-->
+                      <?php
+                      $i = 1;
+                      foreach ($text[$lang]["portfolio"]["list"] as $key => $value):
+                        ?>
+                        <!-- Portfolio Items-->
                         <div class="col-md-6 col-lg-4 mb-5">
-                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target=<?="#portfolioModal" . $i++?>"#portfolioModal1">
                                 <div class="portfolio-item-caption d-flex align-items-end justify-content-end h-100 w-100">
-                                    <div class="portfolio-item-caption-content mb-3 mr-3"><h2 class="text-white">Gallery</h2></div>
+                                    <div class="portfolio-item-caption-content mb-3 mr-3"><h2 class="text-white"><?=$key?></h2></div>
                                 </div>
-                                <img class="img-fluid" src="../assets/img/portfolio/gallery.jpg" alt="" />
+                                <img class="img-fluid" src=<?=$value["image"]?> alt="" />
                             </div>
                         </div>
-                        <!-- Portfolio Item 2-->
-                        <div class="col-md-6 col-lg-4 mb-5">
-                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                                <div class="portfolio-item-caption d-flex align-items-end justify-content-end h-100 w-100">
-                                    <div class="portfolio-item-caption-content mb-3 mr-3"><h2 class="text-white">Blog</h2></div>
-                                </div>
-                                <img class="img-fluid" src="../assets/img/portfolio/blog.jpg" alt="" />
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 3-->
-                        <div class="col-md-6 col-lg-4 mb-5">
-                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                                <div class="portfolio-item-caption d-flex align-items-end justify-content-end h-100 w-100">
-                                    <div class="portfolio-item-caption-content mb-3 mr-3"><h2 class="text-white">Delivery</h2></div>
-                                </div>
-                                <img class="img-fluid" src="../assets/img/portfolio/delivery.jpg" alt="" />
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 4-->
-                        <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                                <div class="portfolio-item-caption d-flex align-items-end justify-content-end h-100 w-100">
-                                    <div class="portfolio-item-caption-content mb-3 mr-3"><h2 class="text-white">Toolbox</h2></div>
-                                </div>
-                                <img class="img-fluid" src="../assets/img/portfolio/toolbox.jpg" alt="" />
-                            </div>
-                        </div>
+                      <?php endforeach; ?>
                     </div>
-
                 </div>
             </section>
             <hr class="m-0" />
@@ -304,7 +263,11 @@ function linkAssign($curLang, $button){
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <?php
+        $i = 1;
+        foreach ($text[$lang]["portfolio"]["list"] as $key => $value):
+          ?>
+        <div class="portfolio-modal modal fade" id=<?="portfolioModal" . $i?> tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -315,11 +278,11 @@ function linkAssign($curLang, $button){
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5 mt-5" id="portfolioModal1Label">Gallery</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5 mt-5" id=<?="portfolioModal" . $i++ . "Label"?>><?=$key?></h2>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/gallery.jpg" alt="" />
+                                    <img class="img-fluid rounded mb-5" src=<?=$value["image"]?> alt="" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p><?=$text[$lang]["portfolio"]["list"]["gallery"]?></p>
+                                    <p><?=$value["description"]?></p>
                                     <p class="mb-5 text-uppercase"><?=$text[$lang]["portfolio"]["comingsoon"]?></p>
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
@@ -332,93 +295,8 @@ function linkAssign($curLang, $button){
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5 mt-5" id="portfolioModal2Label">Blog</h2>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/blog.jpg" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p><?=$text[$lang]["portfolio"]["list"]["blog"]?></p>
-                                    <p class="mb-5 text-uppercase"><?=$text[$lang]["portfolio"]["comingsoon"]?></p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        <?=$text[$lang]["portfolio"]["close"]?>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5 mt-5" id="portfolioModal3Label">Delivery</h2>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/delivery.jpg" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p><?=$text[$lang]["portfolio"]["list"]["delivery"]?></p>
-                                    <p class="mb-5 text-uppercase"><?=$text[$lang]["portfolio"]["comingsoon"]?></p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        <?=$text[$lang]["portfolio"]["close"]?>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5 mt-5" id="portfolioModal4Label">Toolbox</h2>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/toolbox.jpg" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p><?=$text[$lang]["portfolio"]["list"]["toolbox"]?></p>
-                                    <p class="mb-5 text-uppercase"><?=$text[$lang]["portfolio"]["comingsoon"]?></p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        <?=$text[$lang]["portfolio"]["close"]?>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <?php endforeach; ?>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
