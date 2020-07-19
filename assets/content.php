@@ -262,7 +262,6 @@ function linkAssign($curLang, $button){
             </section>
         </div>
         <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
         <?php
         $i = 1;
         foreach ($text[$lang]["portfolio"]["list"] as $key => $value):
