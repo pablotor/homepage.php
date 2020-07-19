@@ -209,8 +209,8 @@ function linkAssign($curLang, $button){
                         <div class="flex-grow-1">
                             <h3 class="mb-0"><?=$edu["inst"]?></h3>
                             <div class="subheading"><?=$edu["title"]?></div>
-                            <?php if (edu["subtitle"]){
-                              echo '<p class="mb-3">${edu["subtitle"]}</p>';
+                            <?php if (edu["subtitle"] !== ""){
+                              echo '<p class="mb-3">' . $edu["subtitle"] . '</p>';
                             } ?>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary"><?=$edu["date"]?></span></div>
@@ -233,7 +233,7 @@ function linkAssign($curLang, $button){
                         ?>
                         <!-- Portfolio Items-->
                         <div class="col-md-6 col-lg-4 mb-5">
-                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target=<?="#portfolioModal" . $i++?>"#portfolioModal1">
+                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target=<?="#portfolioModal" . $i++?>>
                                 <div class="portfolio-item-caption d-flex align-items-end justify-content-end h-100 w-100">
                                     <div class="portfolio-item-caption-content mb-3 mr-3"><h2 class="text-white"><?=$key?></h2></div>
                                 </div>
@@ -267,7 +267,7 @@ function linkAssign($curLang, $button){
         $i = 1;
         foreach ($text[$lang]["portfolio"]["list"] as $key => $value):
           ?>
-        <div class="portfolio-modal modal fade" id=<?="portfolioModal" . $i?> tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id=<?="portfolioModal" . $i?> tabindex="-1" role="dialog" aria-labelledby=<?="portfolioModal" . $i . "Label"?> aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
