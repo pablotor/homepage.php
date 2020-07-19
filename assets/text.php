@@ -221,7 +221,7 @@ $text = [
         "title" => "Ingeniería en Informática",
         "subtitle" => "Incompleto",
         "date" => "2009 - 2016"
-      ], #end of list
+      ] #end of list
     ], #end of education
 
     "portfolio" => [

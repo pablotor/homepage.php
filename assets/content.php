@@ -93,8 +93,8 @@ function linkAssign($curLang, $button){
                               <ul>
                                 <li><?=$text[$lang]["experience-i"]["joblist"][2]["qual"][0]?></li>
                                 <li><?=$text[$lang]["experience-i"]["joblist"][2]["qual"][1]?></li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["qual"][2]?></li>
                                 <li><?=$text[$lang]["experience-i"]["joblist"][2]["qual"][3]?></li>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][2]["qual"][4]?></li>
                               </ul>
                             </p>
                             <p><?=$text[$lang]["experience-i"]["achi"]?>
@@ -110,13 +110,13 @@ function linkAssign($curLang, $button){
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0"><li><?=$text[$lang]["experience-i"]["joblist"][1]["title"]?></li></h3>
-                            <div class="subheading mb-3"><li><?=$text[$lang]["experience-i"]["joblist"][1]["place"]?></li></div>
+                            <h3 class="mb-0"><?=$text[$lang]["experience-i"]["joblist"][1]["title"]?></h3>
+                            <div class="subheading mb-3"><?=$text[$lang]["experience-i"]["joblist"][1]["place"]?></div>
                             <p><?=$text[$lang]["experience-i"]["qual"]?>
                               <ul>
                                 <li><?=$text[$lang]["experience-i"]["joblist"][1]["qual"][0]?></li>
                                 <li><?=$text[$lang]["experience-i"]["joblist"][1]["qual"][1]?></li>
-                                <li><?=$text[$lang]["experience-i"]["joblist"][1]["qual"][3]?></li>
+                                <li><?=$text[$lang]["experience-i"]["joblist"][1]["qual"][2]?></li>
                               </ul>
                             </p>
                             <p><?=$text[$lang]["experience-i"]["achi"]?>
@@ -140,7 +140,7 @@ function linkAssign($curLang, $button){
                               </ul>
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><li><?=$text[$lang]["experience-i"]["joblist"][0]["date"]?></li></span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><?=$text[$lang]["experience-i"]["joblist"][0]["date"]?></span></div>
                     </div>
                 </div>
             </section>
